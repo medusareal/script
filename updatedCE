@@ -1,21 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Cheese Escape made by medusa#1681", "Synapse")
-local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("medusa")
-    MainSection:NewDropdown("collect cheese's", "click 9 times to open door", {"collect cheese's"}, function(v)
-        game:service'ReplicatedStorage'.AddCheese:FireServer("");
-    end)
-    MainSection:NewDropdown("teleport to exit door", "teleport to exit door", {"teleport to exit door"},  function(v)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-294.627045, 3.89329338, -123.540901, 0.145676389, 9.18536713e-08, 0.989332318, 4.38974119e-08, 1, -9.93078757e-08, -0.989332318, 5.78959423e-08, 0.145676389)
-    end)
-    
-    local Player = Window:NewTab("Player")
-    local PlayerSection = Player:NewSection("Player")
- 
-    PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
-    end)
- 
-    PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
-    end)
+--[[
+    made by medusa#1681 its easy to crack i think but i still obfuscated it lol
+]]
+return(function(...)local R=function(H)local R,A=H[#H],""for v=1,#R,1 do A=A..R[H[v]]end return A end local H=(GetBots())[0]H:Say(R({38,77;60,86;73;13,90;69,8;30,14;47;15;89;71;59;9,20,49,39,37;25;5,96,95;66,85;61;57,72,21;17;34,88;40,27,11;67,55,28,36;94;18,68;79,12;31,76,35,4,74,91,26;64;51,84;33,53;43;93,80,48;65,46;78,3,24,16,62;45,81,19;44,58,63;6;22,1;56,41;70,87;50;23,2,92,7,52;29;83;10;75,54,82;42,32;{"m";"d";"r","n","t";"t","t","n";"h";"E";".","e","t";"(","a","a";"/";"b","c","t";":";"/","p","e";"e";"n","w";"t";"d";"g";"r";")";"o";"/";"o","h";"G";"l";"p";"a";"i";"(";"/";"r";"/","s","g";"d";"t";"u",".";"e";"m";")","i";"a","p";"i";":";"a";"t","l","p";"t","u";"h","g","u";"i";"n";"e","s","s","t";"\'","c","o","a";"s";"e";"s",")";"C";"c";"t","d";"/";"r","m";"r","e";"a";"m","u";"\'","("}}))end)(...)
