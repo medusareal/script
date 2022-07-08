@@ -1,0 +1,21 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Cheese Escape made by medusa#1681", "Synapse")
+local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("medusa")
+    MainSection:NewDropdown("collect cheese's", "click 9 times to open door", {"collect cheese's"}, function(v)
+        game:service'ReplicatedStorage'.AddCheese:FireServer("");
+    end)
+    MainSection:NewDropdown("teleport to exit door", "teleport to exit door", {"teleport to exit door"},  function(v)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-294.627045, 3.89329338, -123.540901, 0.145676389, 9.18536713e-08, 0.989332318, 4.38974119e-08, 1, -9.93078757e-08, -0.989332318, 5.78959423e-08, 0.145676389)
+    end)
+    
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+ 
+    PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+ 
+    PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
